@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(284deg, #fedd4e, #fcb43a);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.header-title::after {
+  content: ' ▸ ';
+  padding: 0 0.5rem;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.search-panel {
+  /* display: flex; */
+}
+
+.search-panel__filters {
+  flex: 1;
+}
+
+.search-panel__results {
+  flex: 3;
+}
+
+.ais-Highlight-highlighted {
+  color: inherit;
+  font-size: inherit;
+}
+
+#searchbox {
+  margin-bottom: 2rem;
+}
+
+#pagination {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.ais-Hits-item article {
+  display: flex;
+}
+
+.ais-Hits-item img {
+  max-height: 125px;
+  padding-right: 16px;
+}
+
+.municipio-hit {
+  cursor: pointer;
+}
+
+.municipio-hit:focus {
+  outline: 2px solid #fcb43a;
+  outline-offset: 3px;
+}
+
+.municipio-hit:hover h1 {
+  text-decoration: underline;
+}
+
+#clearMunicipioFilter {
+  appearance: none;
+  border: 1px solid #d6d6e7;
+  border-radius: 4px;
+  background: #fff;
+  color: #23263b;
+  cursor: pointer;
+  font: inherit;
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.7rem;
+}
+
+#clearMunicipioFilter:hover {
+  border-color: #fcb43a;
+}
+
+.municipio-filter {
+  align-items: center;
+  background: #fff7df;
+  border: 1px solid #f2d076;
+  border-radius: 4px;
+  color: #3b2f08;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.75rem;
+}
+
+.municipio-filter.is-empty {
+  background: #f7f7fa;
+  border-color: #dedee8;
+  color: #5a5e72;
+}
+
+.municipio-filter span {
+  min-width: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Optional space between items */
+}
